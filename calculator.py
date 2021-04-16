@@ -29,3 +29,9 @@ dif = firstNum - secondNum
 print(firstNum, " - ", secondNum, " = ", dif)
 
 #Multiplication function
+prod = firstNum * secondNum
+print(firstNum, " * ", secondNum, " = ", prod)
+
+#Division function
+quot = firstNum / secondNum
+print("DIVISION: ", firstNum, " / ", secondNum, " = ", quot)
