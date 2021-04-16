@@ -19,23 +19,25 @@ firstNum = int(firstNum)
 secondNum = int(secondNum)
 
 #Error handling for division funnction
-if secondNum == 0:
+while secondNum == 0:
     print("ERROR: Cannot compute division, zero is not valid divisor.")
     secondNum = input("Enter new number: ")
+    secondNum = int(secondNum)
+
 else:
 
     #Addition function
     sum = firstNum + secondNum
-    print(firstNum, " + ", secondNum, " = ", sum)
+    print("ADDITION: ", firstNum, " + ", secondNum, " = ", sum)
 
     #Subtraction function
     dif = firstNum - secondNum
-    print(firstNum, " - ", secondNum, " = ", dif)
+    print("SUBTRACTION: ", firstNum, " - ", secondNum, " = ", dif)
 
     #Multiplication function
     prod = firstNum * secondNum
-    print(firstNum, " * ", secondNum, " = ", prod)
+    print("MULTIPLICATION: ", firstNum, " * ", secondNum, " = ", prod)
 
     #Division function
-    quot = firstNum / secondNum
+    quot = firstNum // secondNum
     print("DIVISION: ", firstNum, " / ", secondNum, " = ", quot)
