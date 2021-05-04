@@ -48,6 +48,11 @@ class TestAvg(unittest.TestCase):
 
         self.assertRaises(TypeError, calc_avg, False, [6,5,4,3,2,1])
 
+    #Unit Test to assert that function returns a number
+    def test_numReturn(self):
+        self.assertIsInstance(calc_avg([1,2,3,4,87,45,90]), float)
+        self.assertIsInstance(calc_avg([6,92,483,3,9,1024,420,96,3]), float)
+
 # Call Unit Tests
 if __name__ == '__main__':
     unittest.main()
