@@ -29,9 +29,9 @@ class TestCube(unittest.TestCase):
     #Unit Test to assert that the volume is correctly calculated
     def test_vol(self):
         self.assertEqual(calc_cube(4), 64)
-        self.assertAlmostEqual(calc_cube(21), 9261)
-        self.assertAlmostEqual(calc_cube(9), 729)
-        self.assertAlmostEqual(calc_cube(0), 0)
+        self.assertEqual(calc_cube(21), 9261)
+        self.assertEqual(calc_cube(9), 729)
+        self.assertEqual(calc_cube(0), 0)
 
     #Unit Test to determine whether the input value is properly detected, and whther or not an invalid typecast is excepted correctly.
     def test_input(self):
