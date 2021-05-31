@@ -5,8 +5,9 @@
 # Program 1, unittest testing, and pytest testing
 # This first program will store and return usernames using set and get functions.
 
-# import unittesting class
+# import unittesting class, pytest class
 import unittest
+import pytest
 
 class User:
 	user = []
@@ -23,7 +24,7 @@ class User:
 		else:
 			return self.user[userID]
 
-# Unittesting class for the User class
+# UNITTEST CLASS FOR THE USER CLASS
 class Testing(unittest.TestCase):
 	user = User()
 	userID = []
@@ -51,19 +52,22 @@ class Testing(unittest.TestCase):
 
 			print('\nFINISH SET USER TEST')
 
-	def test_boolean(self):
-		a = True
-		b = True
-		self.assertEqual(a, b)
+	# Test case function to check the get_user function
+	def test_get_user(self):
+		print('\nSTART GET USER TEST\n')
+
+		length = len(self.userID) # Store total number of stored username information
+		print('userID length = ', length)
+		print('username length = ', len(self.username))
+
+		for i in range(6):
+			if i < length: #If I does not exceed the total length, then verify the username that has been returned
+				self.assertEqual(self.username[i], self.user.get_user(self.userID[i])) # If the two names do not match, then the test case will fail
+			else:
+				print('Testing for GET_USER no user test')
+				self.assertEqual('ERROR: Username does not exist', self.user.get_user(i)) # If the length exceeds, check for error message
+				print('\nFinish GET_USER test\n')
 
 if __name__ == '__main__':
 	unittest.main()
-
-	user = User()
-	user.set_user('Bojack')
-	user.set_user('Todd')
-	user.set_user('Diane')
-	user.set_user('Carolyn')
-
-	print('Username is stored with ID ', user.set_user('Gracey'))
-	print('Username stored with ID 0 is', user.get_user(0))
+	
