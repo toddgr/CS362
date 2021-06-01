@@ -16,10 +16,10 @@ class TestCase(unittest.TestCase):
 
     # First test asserts that years that ARE evenly divisible by 4 are counted as a leap year by the function.
     def test1(self):
-        self.assertEqual(leapYear(1888), 'Yes')
-        self.assertEqual(leapYear(1828), 'Yes')
-        self.assertEqual(leapYear(2000), 'Yes')
-        self.assertEqual(leapYear(1944), 'Yes')
+        self.assertEqual(Q2Code.leapYear(1888), 'Yes')
+        self.assertEqual(Q2Code.leapYear(1828), 'Yes')
+        self.assertEqual(Q2Code.leapYear(2000), 'Yes')
+        self.assertEqual(Q2Code.leapYear(1944), 'Yes')
 
 if __name__ == '__main__':
     unittest.main()

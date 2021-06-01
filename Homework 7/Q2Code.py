@@ -6,3 +6,9 @@
 # Question 2: From homework 1, rewrite the leap year program using the test-first approach. 
 
 # Code implementation
+
+def leapYear(year):
+    if year % 4 == 0:
+        return 'Yes'
+    else:
+        return 'No'
