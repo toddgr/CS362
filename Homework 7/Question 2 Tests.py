@@ -21,5 +21,12 @@ class TestCase(unittest.TestCase):
         self.assertEqual(Q2Code.leapYear(2000), 'Yes')
         self.assertEqual(Q2Code.leapYear(1944), 'Yes')
 
+    # First test asserts that years that are evenly divisible by 100 (not counting years that are divisible by 400) are NOT counted as a leap year by the function.
+    def test2(self):
+        self.assertEqual(Q2Code.leapYear(1900), 'No')
+        self.assertEqual(Q2Code.leapYear(1800), 'No')
+        self.assertEqual(Q2Code.leapYear(1700), 'No')
+        self.assertEqual(Q2Code.leapYear(2100), 'No')
+
 if __name__ == '__main__':
     unittest.main()
