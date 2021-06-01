@@ -9,7 +9,6 @@
 
 # import unittesting class, pytest class
 import unittest
-import pytest
 
 # Function that compares the input against the input reversed, returns true or false
 def strResult(string):
@@ -23,11 +22,12 @@ def palindrome(str):
 	#Reverse the input, store true or false value
 	result = strResult(str)
 	#Print output result
+	print('The string given is: ', str)
 	if result:
-		print('YES')
+		print('YES, ', str, ' is a palindrome.\n')
 		return True
 	else: 
-		print('NO')
+		print('NO, ', str, 'is not a palindrome.\n')
 		return False
 
 
