@@ -23,3 +23,10 @@ def fizzbuzz(i):
 	else:
 		print(i)
 		return i
+
+def question1():
+	for i in range(1, 100):
+		fizzbuzz(i)
+
+if __name__ == '__main__':
+	question1()
