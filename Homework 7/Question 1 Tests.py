@@ -24,5 +24,10 @@ class TestCase(unittest.TestCase):
         for i in [5, 10, 20, 25]:
             self.assertEqual(Q1Code.fizzbuzz(i), "Buzz")
 
+    # Third test asserts that multiples of BOTH five and three are equal to 'Fizzbuzz'
+    def test3(self):
+        for i in [15, 30, 45, 60]:
+            self.assertEqual(Q1Code.fizzbuzz(i), "Fizzbuzz")
+
 if __name__ == "__main__":
     unittest.main()
