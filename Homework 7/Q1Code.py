@@ -8,3 +8,18 @@
 # multiples of both three and five print "FizzBuzz".
 
 # Code implementation
+
+def fizzbuzz(i):
+	if i % 3 == 0:
+		if i % 5 == 0:
+			print('Fizzbuzz')
+			return 'Fizzbuzz'
+		else:
+			print('Fizz')
+			return 'Fizz'
+	elif i % 5 == 0:
+		print('Buzz')
+		return 'Buzz'
+	else:
+		print(i)
+		return i

@@ -17,7 +17,7 @@ class TestCase(unittest.TestCase):
     # First test asserts that the first four multiples of three are equal to "Fizz"
     def test1(self):
         for i in [3, 6, 9, 12]:
-            self.assertEqual(fizzbuzz(i), "Fizz")
+            self.assertEqual(Q1Code.fizzbuzz(i), "Fizz")
 
 if __name__ == "__main__":
     unittest.main()
