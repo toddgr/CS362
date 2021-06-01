@@ -19,5 +19,10 @@ class TestCase(unittest.TestCase):
         for i in [3, 6, 9, 12]:
             self.assertEqual(Q1Code.fizzbuzz(i), "Fizz")
 
+    # Second test asserts that multiples of five (that are not also multiples of three) are equal to "Buzz"
+    def test2(self):
+        for i in [5, 10, 20, 25]:
+            self.assertEqual(Q1Code.fizzbuzz(i), "Buzz")
+
 if __name__ == "__main__":
     unittest.main()
