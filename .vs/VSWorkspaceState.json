@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Homework2",
-    "\\Homework4",
-    "\\In-class Activity Unit Testing",
-    "\\In-class Activity Unittest and Pytest"
+    "\\Homework 7",
+    "\\In-class Activity Unittest and Pytest",
+    "\\In-class Activity unittest pytest coverage pytest-cov"
   ],
-  "SelectedNode": "\\In-class Activity Unit Testing\\calculatorApp.py",
+  "SelectedNode": "\\In-class Activity unittest pytest coverage pytest-cov\\test_leapYear.py",
   "PreviewInSolutionExplorer": false
 }
